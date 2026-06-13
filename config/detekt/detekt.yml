@@ -9,6 +9,10 @@ style:
     max: 3
 
 complexity:
+  CyclomaticComplexMethod:
+    active: true
+    # Compose @Composable functions branch heavily on state — suppress for UI trees.
+    ignoreAnnotated: ['Composable']
   LongMethod:
     active: true
     threshold: 60
