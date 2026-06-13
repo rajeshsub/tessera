@@ -1,0 +1,36 @@
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+!src/**/build/
+
+# Android
+local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+captures/
+.cxx/
+
+# Signing secrets (never commit)
+keystore.properties
+*.keystore
+*.jks
+
+# IDE
+.idea/
+*.iml
+.kotlin/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+**/reports/
+**/test-results/
+
+# Local build logs
+*.log

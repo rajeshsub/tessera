@@ -1,0 +1,28 @@
+build:
+  maxIssues: 0
+
+style:
+  MagicNumber:
+    active: false
+  ReturnCount:
+    active: true
+    max: 3
+
+complexity:
+  LongMethod:
+    active: true
+    threshold: 60
+    # Compose @Composable functions are naturally long (declarative UI trees).
+    ignoreAnnotated: ['Composable']
+  LongParameterList:
+    active: true
+    # Compose slot/callback APIs routinely take many lambda parameters.
+    ignoreAnnotated: ['Composable']
+  TooManyFunctions:
+    active: false
+
+naming:
+  FunctionNaming:
+    active: true
+    # Compose @Composable functions are PascalCase by convention.
+    ignoreAnnotated: ['Composable']

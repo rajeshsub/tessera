@@ -1,0 +1,20 @@
+Tessera is a free, open-source two-factor authentication app for Android. It generates TOTP
+and HOTP codes entirely on your device.
+
+Privacy first:
+* No accounts, no servers, no analytics, no ads.
+* No unnecessary permissions.
+* Your secrets are stored in a single vault, encrypted with a key only you hold.
+
+Yours to keep:
+* Encrypted backup to storage you choose.
+* A gated plaintext export using standard otpauth URIs, so you can move to any other
+  authenticator at any time.
+
+Simple and fast:
+* Add accounts by scanning a QR code, importing an image, or entering details by hand.
+* Import from Google Authenticator and standard otpauth links.
+* Optional biometric unlock, with your passphrase always available as a fallback.
+
+The F-Droid build contains zero Google Play Services. A separate Play Store build adds a Wear
+OS companion that displays codes computed by your phone.

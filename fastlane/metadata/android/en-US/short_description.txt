@@ -1,0 +1,1 @@
+Private, open-source TOTP and HOTP authenticator. No accounts, no trackers.

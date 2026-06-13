@@ -1,0 +1,40 @@
+# Pinned hook versions. These MUST match the versions enforced in CI (.github/workflows/ci.yml).
+# Install locally with: pre-commit install   (bootstrap does this for you)
+minimum_pre_commit_version: "3.5.0"
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+        args: ["--maxkb=512"]
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+
+  - repo: local
+    hooks:
+      # Reject em dash and en dash anywhere in repo content (project rule).
+      - id: no-em-dash
+        name: no em dash or en dash
+        entry: python tools/hooks/no_em_dash.py
+        language: system
+        types: [text]
+
+      # ktlint via the Gradle wrapper so the engine version matches the build.
+      - id: ktlint
+        name: ktlint (gradle)
+        entry: tools/hooks/ktlint.sh
+        language: script
+        pass_filenames: false
+        types_or: [kotlin]
+
+      # detekt via the Gradle wrapper.
+      - id: detekt
+        name: detekt (gradle)
+        entry: tools/hooks/detekt.sh
+        language: script
+        pass_filenames: false
+        types_or: [kotlin]
