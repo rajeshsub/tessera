@@ -21,6 +21,7 @@ import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MenuAnchorType
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
@@ -163,6 +164,18 @@ fun AddAccountScreen(
                 )
             }
             Spacer(Modifier.height(16.dp))
+            OutlinedButton(
+                onClick = onQrScan,
+                modifier = Modifier.fillMaxWidth(),
+            ) {
+                Icon(
+                    Icons.Default.QrCode,
+                    contentDescription = null,
+                    modifier = Modifier.padding(end = 8.dp),
+                )
+                Text("Scan QR code")
+            }
+            Spacer(Modifier.height(8.dp))
             Button(
                 onClick = viewModel::save,
                 modifier = Modifier.fillMaxWidth(),
