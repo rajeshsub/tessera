@@ -36,7 +36,7 @@ play build. Please note that the watch is a tethered display and holds no secret
 shows codes computed by the phone over the Data Layer. When the phone is unreachable, the 
 watch shows an "open phone" state.
 
-## Requirements
+## Dev Requirements (for building this repo on your machine)
 
 - JDK 17 (LTS). JDK 17 through 23 work; newer JDKs are not yet supported by the build.
 - Android SDK with platform 35 and build-tools 35.x.
