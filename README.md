@@ -4,8 +4,8 @@ A free, open-source TOTP and HOTP authenticator for Android. Privacy-absolute: z
 collection, zero trackers, zero unnecessary permissions. Your secrets stay on your device,
 encrypted with a key only you hold.
 
-Tessera is a Roman token used as proof of identity or a pass. That is the product thesis:
-a small token that proves who you are.
+Tessera is a Roman token used as proof of identity or a pass. That is the product thesis.
+It is a small token that proves who you are.
 
 ## Status
 
