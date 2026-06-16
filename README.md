@@ -21,20 +21,20 @@ flavors, linting, coverage, and CI. The OTP and crypto cores land next.
 - You own your data. Encrypted backup to storage you choose, plus a gated plaintext export
   so you can leave at any time.
 
-## Builds and the honest F-Droid tradeoff
+## F-Droid build
 
-Tessera ships in two flavors:
+Please note that Tessera ships in two flavors:
 
-- `foss`: no Google Play Services. This is the F-Droid build. Pure.
+- `foss`: no Google Play Services. This is the F-Droid build.
 - `play`: includes `play-services-wearable` and the Wear OS companion.
 
 Full Wear OS support needs the Play Services Wearable Data Layer, which is not F-Droid clean.
-Rather than compromise the FOSS build, the Wear companion lives only in the `play` flavor.
+Therefore the foss build app comes without the Wear companion. 
 
-F-Droid users get the full phone app without the Wear companion. Play Store users get the
-Wear companion. The watch is a tethered display: it holds no secrets at rest and shows codes
-computed by the phone over the Data Layer. When the phone is unreachable, the watch shows an
-"open phone" state.
+If you want the wear companion (to use in wearable devices like a smart watch), please use the 
+play build. Please note that the watch is a tethered display and holds no secrets at rest. It 
+shows codes computed by the phone over the Data Layer. When the phone is unreachable, the 
+watch shows an "open phone" state.
 
 ## Requirements
 
