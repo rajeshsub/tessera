@@ -67,7 +67,7 @@ fun BackupRestoreScreen(
                 is BackupRestoreViewModel.UiEffect.BackupDone ->
                     snackbar.showSnackbar("Backup complete")
                 is BackupRestoreViewModel.UiEffect.RestoreDone -> {
-                    snackbar.showSnackbar("Restore complete — please unlock again")
+                    snackbar.showSnackbar("Restore complete - please unlock again")
                     onRestored()
                 }
                 is BackupRestoreViewModel.UiEffect.Error -> snackbar.showSnackbar(effect.message)

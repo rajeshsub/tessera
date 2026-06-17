@@ -11,7 +11,7 @@ style:
 complexity:
   CyclomaticComplexMethod:
     active: true
-    # Compose @Composable functions branch heavily on state — suppress for UI trees.
+    # Compose @Composable functions branch heavily on state - suppress for UI trees.
     ignoreAnnotated: ['Composable']
   LongMethod:
     active: true

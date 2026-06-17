@@ -9,7 +9,7 @@ class TotpGeneratorTest {
     private val sha1Secret = "12345678901234567890".toByteArray(Charsets.US_ASCII)
 
     @Test fun generateAllDefaults() {
-        // Calls generate with only required params — exercises default digits=6, period=30, SHA1
+        // Calls generate with only required params - exercises default digits=6, period=30, SHA1
         // RFC 6238 t59: counter = 59/30 = 1 -> same as HotpRfc4226Test.counter1 = "287082"
         assertEquals("287082", TotpGenerator.generate(sha1Secret, 59L))
     }

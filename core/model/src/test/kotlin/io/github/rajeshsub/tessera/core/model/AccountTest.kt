@@ -54,7 +54,7 @@ class AccountTest {
     }
 
     @Test fun toStringDoesNotContainRawSecretReference() {
-        // ByteArray.toString() produces "[B@..." — that must not appear
+        // ByteArray.toString() produces "[B@..." - that must not appear
         assertFalse(make().toString().contains("[B@"))
     }
 

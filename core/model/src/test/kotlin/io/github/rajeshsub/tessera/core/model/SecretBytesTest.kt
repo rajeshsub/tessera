@@ -31,7 +31,7 @@ class SecretBytesTest {
         val original = byteArrayOf(7, 8, 9)
         val s = SecretBytes.wrap(original)
         s.close()
-        // Original must NOT be zeroed — wrap made a copy
+        // Original must NOT be zeroed - wrap made a copy
         assertArrayEquals(byteArrayOf(7, 8, 9), original)
     }
 

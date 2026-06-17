@@ -75,7 +75,7 @@ fun AccountListScreen(
                         delay(effect.timeoutMs)
                         clearClipboard(context)
                     }
-                    snackbar.showSnackbar("Code copied — clears in ${effect.timeoutMs / 1_000}s")
+                    snackbar.showSnackbar("Code copied - clears in ${effect.timeoutMs / 1_000}s")
                 }
                 is AccountListViewModel.UiEffect.ShowSnackbar ->
                     snackbar.showSnackbar(effect.message)

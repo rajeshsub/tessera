@@ -94,7 +94,7 @@ fun ExportWarningScreen(
             Button(
                 onClick = { exportLauncher.launch("tessera_export.txt") },
                 modifier = Modifier.fillMaxWidth(),
-            ) { Text("I understand — export plaintext") }
+            ) { Text("I understand - export plaintext") }
             Spacer(Modifier.height(8.dp))
             OutlinedButton(onClick = onBack, modifier = Modifier.fillMaxWidth()) {
                 Text("Cancel")

@@ -223,7 +223,7 @@ private fun PassphraseWarningBox() {
         Spacer(Modifier.height(6.dp))
         Text(
             "This passphrase is the only key to your vault. If you forget it, " +
-                "all your 2FA accounts on this device will be permanently inaccessible — " +
+                "all your 2FA accounts on this device will be permanently inaccessible - " +
                 "there is no reset, recovery, or change option.",
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -272,7 +272,7 @@ private fun showBiometricPrompt(
                     errorCode: Int,
                     errString: CharSequence,
                 ) {
-                    // silent — user can fall back to passphrase
+                    // silent - user can fall back to passphrase
                 }
             },
         )

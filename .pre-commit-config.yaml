@@ -22,6 +22,7 @@ repos:
         entry: python tools/hooks/no_em_dash.py
         language: system
         types: [text]
+        exclude: ^tools/hooks/no_em_dash\.py$
 
       # ktlint via the Gradle wrapper so the engine version matches the build.
       - id: ktlint

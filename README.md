@@ -29,11 +29,11 @@ Please note that Tessera ships in two flavors:
 - `play`: includes `play-services-wearable` and the Wear OS companion.
 
 Full Wear OS support needs the Play Services Wearable Data Layer, which is not F-Droid clean.
-Therefore the foss build app comes without the Wear companion. 
+Therefore the foss build app comes without the Wear companion.
 
-If you want the wear companion (to use in wearable devices like a smart watch), please use the 
-play build. Please note that the watch is a tethered display and holds no secrets at rest. It 
-shows codes computed by the phone over the Data Layer. When the phone is unreachable, the 
+If you want the wear companion (to use in wearable devices like a smart watch), please use the
+play build. Please note that the watch is a tethered display and holds no secrets at rest. It
+shows codes computed by the phone over the Data Layer. When the phone is unreachable, the
 watch shows an "open phone" state.
 
 ## Dev Requirements (for building this repo on your machine)
